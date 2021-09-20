@@ -64,6 +64,28 @@ public  class User implements Serializable,UserDetails{
 
 
 
+	public User(String email, String password, boolean active, List<Authority> authorities,
+			String certificate) {
+		super();
+		this.email = email;
+		this.password = password;
+		this.active = active;
+		this.authorities = authorities;
+		this.certificate = certificate;
+	}
+
+
+
+
+
+
+
+	public User() {
+		// TODO Auto-generated constructor stub
+	}
+
+
+
 	public Long getId() {
 		return id;
 	}
