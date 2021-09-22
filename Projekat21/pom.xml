@@ -59,8 +59,7 @@
             <artifactId>jjwt</artifactId>
             <version>0.6.0</version>
         </dependency>
-        
-        
+
 		<!-- https://mvnrepository.com/artifact/joda-time/joda-time -->
 	<dependency>
     	<groupId>joda-time</groupId>
