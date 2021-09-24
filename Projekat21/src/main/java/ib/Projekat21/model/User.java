@@ -23,7 +23,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 
 @Entity
-@Table(name="User")
+@Table(name="user")
 public  class User implements Serializable,UserDetails{
 	
 	@Id

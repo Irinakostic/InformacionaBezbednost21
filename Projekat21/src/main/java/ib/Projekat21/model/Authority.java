@@ -11,9 +11,14 @@ import org.springframework.security.core.GrantedAuthority;
 
 
 @Entity
-@Table(name="Authority")
+@Table(name="authority")
 public class Authority implements GrantedAuthority{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id")
@@ -22,11 +27,16 @@ public class Authority implements GrantedAuthority{
 	@Column(name = "name")
 	private String name;
 
-	@Override
+	
 	public String getAuthority() {
 		return name;
 	}
+	
+	
+	public Authority(){}
+		
 
+	
 	public Authority(Long id, String name) {
 		super();
 		this.id = id;

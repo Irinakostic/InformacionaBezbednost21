@@ -30,6 +30,7 @@ public class UserController {
 	@Autowired
 	private PasswordEncoder bCryptPasswordEncoder;
 
+	
 	@PostMapping(path = "users/register")
     public @ResponseBody ResponseEntity<?> registrovaniUser(@RequestParam String email, @RequestParam String password) {
     	Authority authority = authorityRepository.findByName("REGULAR").get();
